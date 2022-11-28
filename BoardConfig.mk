@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := vili
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# Firmware
+-include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
 
