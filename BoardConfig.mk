@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := vili
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/vili_QGKI.config
 
