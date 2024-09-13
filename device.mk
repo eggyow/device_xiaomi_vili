@@ -21,6 +21,12 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Overlays-RRO
+PRODUCT_PACKAGES += \
+    ViliSettingsProviderOverlay \
+    ViliWifiOverlay \
+    ViliNfcOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
