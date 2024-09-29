@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := vili
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# Display
+TARGET_SCREEN_DENSITY := 436
+
 # Firmware
 -include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
 
