@@ -49,5 +49,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=6000 \
     ro.surface_flinger.set_display_power_timer_ms=1000
 
+# Vibrator
+$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.xiaomi)
+$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
