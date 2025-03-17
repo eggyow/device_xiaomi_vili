@@ -32,6 +32,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
+    'vendor/etc/libnfc-nxp.conf': blob_fixup()
+        .regex_replace(r'NXP_T4T_NFCEE_ENABLE=0x01', r'NXP_T4T_NFCEE_ENABLE=0x00'),
     'vendor/etc/camera/vili_motiontuning.xml': blob_fixup()
         .regex_replace('xml=version', 'xml version'),  
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
