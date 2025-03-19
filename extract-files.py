@@ -41,7 +41,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
         .sig_replace('50 07 00 94', '1F 20 03 D5'),
-    'vendor/lib64/hw/com.qti.chi.override.so' : blob_fixup()
+    ('vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/libmialgoengine.so'): blob_fixup()
          .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so': blob_fixup()
         .sig_replace('21 00 80 52 7c 00 00 94', '21 00 80 52 1F 20 03 D5'),
