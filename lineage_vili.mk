@@ -10,6 +10,15 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+
+# Rom Additions
+AXION_CAMERA_REAR_INFO := 108,8,5
+AXION_CAMERA_FRONT_INFO := 16
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+AXION_MAINTAINER := blazerpaul15
+AXION_PROCESSOR := Snapdragon_888
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
