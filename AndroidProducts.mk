@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_vili.mk
+    $(LOCAL_DIR)/pixelage_vili.mk
